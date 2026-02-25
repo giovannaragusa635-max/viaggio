@@ -1,0 +1,8 @@
+{
+  "name": "VibeRoute",
+  "description": "Smart stays, local bites, new mates. A travel companion for Gen Z and Millennials seeking authenticity, safety, and social connection.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

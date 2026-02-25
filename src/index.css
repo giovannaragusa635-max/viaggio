@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-primary: #00FF88;
+  --color-brand-secondary: #00D1FF;
+  --color-bg-dark: #0A0A0A;
+  --color-surface: #161616;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-dark text-white font-sans antialiased;
+  }
+}
+
+@utility glass {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+@utility gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-primary to-brand-secondary;
+}
+
+@utility btn-primary {
+  @apply px-6 py-3 rounded-full bg-gradient-to-r from-brand-primary to-brand-secondary text-black font-bold hover:opacity-90 transition-all active:scale-95;
+}
+
+@utility card-vibe {
+  @apply glass rounded-2xl p-6 hover:border-brand-primary/50 transition-all;
+}
+
